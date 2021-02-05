@@ -1,0 +1,30 @@
+Atlanta Hawks .333
+Philadelphia 76ers .368
+Brooklyn Nets .343
+Boston Celtics .364
+New York Knicks .337
+Toronto Raptors .374
+Utah jazz .380
+Denver Nuggets .359
+Portland Trail Blazers .377
+Oklahoma City Thunder .355
+Minnesota Timberwolves .336
+Milwaukee Bucks .355
+Indiana Pacers .363
+Cleveland Cavaliers .351
+Chicago Bulls .348
+Detroit Pistons .367
+Los Angeles Lakers .349
+Los Angeles Clippers .371
+Phoenix Suns .358
+Golden State Warriors .334
+Sacramento Kings .364
+Charlotte Hornets .352
+Orlando Magic .343
+Miami Heat .379
+Washington Wizards .368
+San Antonio Spurs .376
+Memphis Grizzlies .347
+Houston Rockets .345
+New Orleans Pelicans .370
+Dallas Mavericks .367
