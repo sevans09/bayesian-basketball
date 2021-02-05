@@ -28,13 +28,18 @@ for row in rows:
     
     # Formulate the final game base_url
     game_url = '{}{}'.format(page_root, game_href)
-    
-    # regex to find makes ___ shot
-    ^(?=.*?\bmakes\b)(?=.*?\bshot\b).*$
-    # regex to find turnover
-    ^.*\b(Turnover)\b.*$
-    # regex to get timeout
-    \^.*\b(timeout)\b.*$
 
     print(game_url)
     
+events = [('chicago', 'timeout'), ('philadelphia', 'Turnover'), ('chicago', 'makes a dunk')]
+
+for event in events:
+    print("event is", event[1])
+    if re.match(r"^.*\b(timeout)\b.*$", event[1]):
+        print("found a timeout")
+    elif re.match(r'^.*\b(Turnover)\b.*$', event[1]):
+        print("found a turnover")
+    elif re.match(r'^(?=.*?\bmakes\b).*$', event[1]):
+        print("found a  shot")
+
+# read csv into tuples
