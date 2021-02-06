@@ -1,23 +1,90 @@
-var x = document.querySelectorAll("a");
-var myarray = []
-for (var i=0; i<x.length; i++){
-	//if the strong contains boxscores and .html
-
-	var nametext = x[i].textContent;
-
- 	if (x[i].href.includes("boxscores/") && x[i].href.includes(".html") ) {
-		var cleantext = nametext.replace(/\s+/g, ' ').trim();
-		var cleanlink = x[i].href;
-		myarray.push([cleanlink]);
- 	}
-};
-function make_table() {
-    var table = '<table><thead><th>Name</th><th>Links</th></thead><tbody>';
-   for (var i=0; i<myarray.length; i++) {
-            table += '<tr><td>'+ myarray[i][0] + '</td></tr>';
-    };
- 
-    var w = window.open("");
-w.document.write(table); 
-}
-make_table()
+https://www.basketball-reference.com/boxscores/202102050BRK.html
+https://www.basketball-reference.com/boxscores/202102050CHO.html
+https://www.basketball-reference.com/boxscores/202102050CLE.html
+https://www.basketball-reference.com/boxscores/202102050IND.html
+https://www.basketball-reference.com/boxscores/202102050LAC.html
+https://www.basketball-reference.com/boxscores/202102050MIA.html
+https://www.basketball-reference.com/boxscores/202102050OKC.html
+https://www.basketball-reference.com/boxscores/202102050ORL.html
+https://www.basketball-reference.com/boxscores/202102050PHO.html
+https://www.basketball-reference.com/boxscores/201910230DAL.html
+https://www.basketball-reference.com/boxscores/201910250NOP.html
+https://www.basketball-reference.com/boxscores/201910270DAL.html
+https://www.basketball-reference.com/boxscores/201910290DEN.html
+https://www.basketball-reference.com/boxscores/201911010DAL.html
+https://www.basketball-reference.com/boxscores/201911030CLE.html
+https://www.basketball-reference.com/boxscores/201911060DAL.html
+https://www.basketball-reference.com/boxscores/201911080DAL.html
+https://www.basketball-reference.com/boxscores/201911090MEM.html
+https://www.basketball-reference.com/boxscores/201911110BOS.html
+https://www.basketball-reference.com/boxscores/201911140NYK.html
+https://www.basketball-reference.com/boxscores/201911160DAL.html
+https://www.basketball-reference.com/boxscores/201911180DAL.html
+https://www.basketball-reference.com/boxscores/201911200DAL.html
+https://www.basketball-reference.com/boxscores/201911220DAL.html
+https://www.basketball-reference.com/boxscores/201911240HOU.html
+https://www.basketball-reference.com/boxscores/201911260DAL.html
+https://www.basketball-reference.com/boxscores/201911290PHO.html
+https://www.basketball-reference.com/boxscores/201912010LAL.html
+https://www.basketball-reference.com/boxscores/201912030NOP.html
+https://www.basketball-reference.com/boxscores/201912040DAL.html
+https://www.basketball-reference.com/boxscores/201912070DAL.html
+https://www.basketball-reference.com/boxscores/201912080DAL.html
+https://www.basketball-reference.com/boxscores/201912120DET.html
+https://www.basketball-reference.com/boxscores/201912140DAL.html
+https://www.basketball-reference.com/boxscores/201912160MIL.html
+https://www.basketball-reference.com/boxscores/201912180DAL.html
+https://www.basketball-reference.com/boxscores/201912200PHI.html
+https://www.basketball-reference.com/boxscores/201912220TOR.html
+https://www.basketball-reference.com/boxscores/201912260DAL.html
+https://www.basketball-reference.com/boxscores/201912280GSW.html
+https://www.basketball-reference.com/boxscores/201912290LAL.html
+https://www.basketball-reference.com/boxscores/201912310OKC.html
+https://www.basketball-reference.com/boxscores/202001020DAL.html
+https://www.basketball-reference.com/boxscores/202001040DAL.html
+https://www.basketball-reference.com/boxscores/202001060DAL.html
+https://www.basketball-reference.com/boxscores/202001080DAL.html
+https://www.basketball-reference.com/boxscores/202001100DAL.html
+https://www.basketball-reference.com/boxscores/202001110DAL.html
+https://www.basketball-reference.com/boxscores/202001140GSW.html
+https://www.basketball-reference.com/boxscores/202001150SAC.html
+https://www.basketball-reference.com/boxscores/202001170DAL.html
+https://www.basketball-reference.com/boxscores/202001210DAL.html
+https://www.basketball-reference.com/boxscores/202001230POR.html
+https://www.basketball-reference.com/boxscores/202001250UTA.html
+https://www.basketball-reference.com/boxscores/202001270OKC.html
+https://www.basketball-reference.com/boxscores/202001280DAL.html
+https://www.basketball-reference.com/boxscores/202001310HOU.html
+https://www.basketball-reference.com/boxscores/202002010DAL.html
+https://www.basketball-reference.com/boxscores/202002030IND.html
+https://www.basketball-reference.com/boxscores/202002050DAL.html
+https://www.basketball-reference.com/boxscores/202002070WAS.html
+https://www.basketball-reference.com/boxscores/202002080CHO.html
+https://www.basketball-reference.com/boxscores/202002100DAL.html
+https://www.basketball-reference.com/boxscores/202002120DAL.html
+https://www.basketball-reference.com/boxscores/202002210ORL.html
+https://www.basketball-reference.com/boxscores/202002220ATL.html
+https://www.basketball-reference.com/boxscores/202002240DAL.html
+https://www.basketball-reference.com/boxscores/202002260SAS.html
+https://www.basketball-reference.com/boxscores/202002280MIA.html
+https://www.basketball-reference.com/boxscores/202003010MIN.html
+https://www.basketball-reference.com/boxscores/202003020CHI.html
+https://www.basketball-reference.com/boxscores/202003040DAL.html
+https://www.basketball-reference.com/boxscores/202003060DAL.html
+https://www.basketball-reference.com/boxscores/202003080DAL.html
+https://www.basketball-reference.com/boxscores/202003100SAS.html
+https://www.basketball-reference.com/boxscores/202003110DAL.html
+https://www.basketball-reference.com/boxscores/202007310DAL.html
+https://www.basketball-reference.com/boxscores/202008020PHO.html
+https://www.basketball-reference.com/boxscores/202008040SAC.html
+https://www.basketball-reference.com/boxscores/202008060DAL.html
+https://www.basketball-reference.com/boxscores/202008080DAL.html
+https://www.basketball-reference.com/boxscores/202008100UTA.html
+https://www.basketball-reference.com/boxscores/202008110DAL.html
+https://www.basketball-reference.com/boxscores/202008130PHO.html
+https://www.basketball-reference.com/boxscores/202008170LAC.html
+https://www.basketball-reference.com/boxscores/202008190LAC.html
+https://www.basketball-reference.com/boxscores/202008210DAL.html
+https://www.basketball-reference.com/boxscores/202008230DAL.html
+https://www.basketball-reference.com/boxscores/202008250LAC.html
+https://www.basketball-reference.com/boxscores/202008300DAL.html
